@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+@media (min-width: 1340px) {
+    body{
+        min-width: 1340px;
+    }
+}
+
+@font-face {
+    font-family: 'Slack-larsseit-bold';
+    src: url('./assets/fonts/larsseit-bold.woff2');
+}
+@font-face {
+    font-family: 'Slack-larsseit-regular';
+    src: url('./assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2');
+}
