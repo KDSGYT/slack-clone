@@ -5,11 +5,14 @@
     padding: 0;
 
 }
+
 @media (min-width: 1340px) {
-    body{
-        min-width: 1340px;
-    }
+   
 }
+
+// body > section {
+//     padding: 0 16em;
+// }
 
 @font-face {
     font-family: 'Slack-larsseit-bold';

@@ -1,118 +1,126 @@
-.hero {
-    background-color: #541554;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 16rem;
-    padding-top: 6rem;
-    padding-bottom: auto;
-    height: 38rem;
-    font-family: 'Slack-larsseit-regular';
+@import '../../../assets/variables.scss';
 
-    #left-side {
-
-        width: 60em;
-        padding: 0 4%;
+.hero-container {
+    background-color: $purpleGlobal;
+    .hero {
+        margin:auto;
+        color: white;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: auto;
+        height: 36rem;
+        max-width: $maxWidth;
+        font-family: 'Slack-larsseit-regular';
 
-        &>p {
-            margin-top: -10%;
-        }
+        #left-side {
 
-        #text {
-            margin-top: -10%;
+            // width: 60em;
+            padding: 0 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+ 
+            &>p {
+                margin-top: -10%;
+            }
 
-            h1 {
-                font-size: 4rem;
-                font-family: 'Slack-larsseit-bold';
+            #text {
+                margin-top: -10%;
 
-                span {
-                    color: #ecb22e;
+                h1 {
+                    font-size: 3.5rem;
+                    font-family: 'Slack-larsseit-bold';
+
+                    span {
+                        color: #ecb22e;
+                    }
                 }
+
+                p {
+                    font-size: 1.2em;
+                    width: 85%;
+                }
+            }
+
+            #buttons {
+                margin-top:-5%;
+                width: 90%;
+                height: 3.5em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                #sign-up-with-google,
+                #sign-up-with-email {
+                    background-color: white;
+                    border: none;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    width: 49%;
+                    height: 100%;
+                    // text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    a {
+                        font-family: 'Slack-larsseit-bold';
+                        letter-spacing: 1px;
+                        color: #541554;
+                        text-decoration: none;
+                        padding: 0;
+                        font-size: 0.87rem;
+                        width: 100%;
+                        height: 100%;
+                        padding: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+
+                #sign-up-with-google {
+                    a {
+                        background-color: #4285F4;
+                        color: white;
+
+                        span {
+                            margin-left: 2%;
+
+                        }
+
+                        img {
+                            height: 100%;
+                            margin-left: -10%;
+                            // margin-right: 6%;
+                        }
+                    }
+                }
+
+
+                #sign-up-with-email {}
             }
 
             p {
                 font-size: 1.2em;
-                width: 85%;
+
             }
         }
 
-        #buttons {
-            width: 80%;
-            height: 3.5em;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        #video {
 
-            #sign-up-with-google,
-            #sign-up-with-email {
-                background-color: white;
-                border: none;
-                overflow: hidden;
-                border-radius: 4px;
-                width: 49%;
-                height: 100%;
-                // text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
+            height: 85%;
+            margin: auto;
+            margin-right: -6%;
 
-                a {
-                    font-family: 'Slack-larsseit-bold';
-                    letter-spacing: 1px;
-                    color: #541554;
-                    text-decoration: none;
-                    padding: 0;
-                    font-size: 0.87rem;
-                    width: 100%;
-                    height: 100%;
-                    padding: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                }
+            video {
+                height: inherit;
+                // width: inherit;
             }
-
-            #sign-up-with-google {
-                a {
-                    background-color: #4285F4;
-                    color: white;
-
-                    span {
-                        margin-left: 2%;
-
-                    }
-
-                    img {
-                        height: 100%;
-                        margin-left: -10%;
-                        // margin-right: 6%;
-                    }
-                }
-            }
-
-
-            #sign-up-with-email {}
-        }
-
-        p {
-            font-size: 1.2em;
-
         }
     }
 
-    #video {
-
-        height: 90%;
-        margin-right: -6%;
-
-        video {
-            height: inherit;
-            // width: inherit;
-        }
-    }
 }

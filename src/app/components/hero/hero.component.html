@@ -1,26 +1,33 @@
-<div class="hero">
-    <div id="left-side">
-        <div id="text">
-            <h1>Great teamwork starts with a <span>digital HQ</span></h1>
-            <p>With all your people, tools and communication in one place, you can work faster and more flexibly than
-                ever before.</p>
-        </div>
-        <div id="buttons">
-            <div id="sign-up-with-email">
-                <a href="#">SIGN UP WITH EMAIL</a>
+<section class="hero-container">
+    <div class="hero">
+        <div id="left-side">
+            <div id="text">
+                <h1>Great teamwork starts with a <span>digital HQ</span></h1>
+                <p>With all your people, tools and communication in one place, you can work faster and more flexibly
+                    than
+                    ever before.</p>
             </div>
+            <div id="buttons">
+                <div id="sign-up-with-email">
+                    <a href="#">SIGN UP WITH EMAIL</a>
+                </div>
 
-            <div id="sign-up-with-google">
-                <a href="#">
-                    <img src="assets/homepage/google_signin_buttons/web/vector/btn_google_dark_normal_ios.svg" />
-                    <span>SIGN UP WITH GOOGLE</span>
-                </a>
+                <div id="sign-up-with-google">
+                    <a href="#">
+                        <img src="assets/homepage/google_signin_buttons/web/vector/btn_google_dark_normal_ios.svg" />
+                        <span>SIGN UP WITH GOOGLE</span>
+                    </a>
+                </div>
             </div>
+            <p>Slack is free to try for as long as you’d like</p>
         </div>
-        <p>Slack is free to try for as long as you’d like</p>
-    </div>
 
-    <div id="video">
-        <video loop autoplay src="assets/homepage/video/hero-product-ui.mp4"></video>
+        <div id="video">
+            <!-- NOTE: need to fix the video. It is not autoplaying. -->
+
+            <video #video id="hero-video" autoplay loop [muted]="true">
+                <source src="assets/homepage/video/hero-product-ui.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-</div>
+</section>
