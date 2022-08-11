@@ -49,8 +49,50 @@
                 width: fit-content;
 
                 img {
-                    height: 50%;
+                    height: 80%;
                 }
+            }
+
+            #talk-to-sales,
+            #try-for-free {
+                height: 55%;
+                width: 30%;
+
+                button {
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-family: 'Slack-larsseit-bold';
+                    text-align: center;
+
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    // border: none;
+                    background: none;
+                    transition: border-width 0.1s linear;
+                    &:hover{
+                        border-width: 4px;
+                    }
+                }
+
+            }
+
+            #talk-to-sales button {
+                
+            }
+
+            #try-for-free button {
+                background-color: white;
+                border-color: $purpleGlobal;
+                color: $purpleGlobal;
+
+                
+                &:hover {
+                    border-width: 5px;
+                }
+
+
             }
         }
 
@@ -98,7 +140,7 @@
 
                 li {
                     padding: 5%;
-                    padding-left:8% ;
+                    padding-left: 8%;
                     font-size: 1em;
                 }
 
@@ -107,6 +149,7 @@
                     text-decoration: none;
                     background-color: rgb(35, 35, 187);
                 }
+
                 --webkit-transition: all 0.3s ease-in;
             }
 
@@ -116,6 +159,7 @@
                 animation: hiddenMenuInsertion 0.3s ease-in;
             }
         }
+
         //NOTE: need to create an animation when the menu goes back to hidden state.
 
     }
@@ -126,7 +170,7 @@
         font-weight: 700;
         font-size: 1.5em !important;
 
-        
+
 
         img {
 
