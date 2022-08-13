@@ -3,8 +3,7 @@
 #features-container {
     width: 100%;
     background-color: $globalBackgroundColor;
-
-    #features {
+    #brand-features {
         margin: auto;
         max-width: $maxWidth;
         
@@ -29,5 +28,9 @@
                 list-style-type: none;
             }
         }
+    }
+    // this border was added becuase of a bug that was not allowing the following compoennt to get the full height of the content.
+    #features{
+        border:1px solid rgba(255, 255, 255, 0);
     }
 }

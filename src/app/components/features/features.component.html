@@ -1,5 +1,5 @@
 <main id="features-container">
-    <section id="features">
+    <section id="brand-features">
         <div id="customer-brands">
             <h3>TRUSTED BY COMPANIES ALL OVER THE WORLD</h3>
             <ol>
@@ -7,7 +7,7 @@
             </ol>
         </div>
     </section>
-    <div>
+    <div id="features">
 
         <app-feature *ngFor="let video of videos" [videoSide]="video.videoSide"
             [videoLink]="'assets/homepage/video/' + video.videoLink" [sectionHeading]="video.sectionHeading"

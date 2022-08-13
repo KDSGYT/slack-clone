@@ -1,10 +1,14 @@
 @import '../../../../assets/variables.scss';
 $linkColor: #1264a3;
+
 .feature-container {
     max-width: $maxWidth;
     height: 22em;
-    overflow: hidden;
-    margin: 4em auto;
+    min-height: fit-content;
+    // overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 2em auto;
     display: flex;
     justify-content: space-between;
 
@@ -20,7 +24,7 @@ $linkColor: #1264a3;
         flex-direction: column;
         justify-content: space-evenly;
         width: 40%;
-
+        height: fit-content;
         font-family: 'Slack-larsseit-regular';
 
         h1 {
@@ -29,16 +33,21 @@ $linkColor: #1264a3;
         }
 
         .link-container {
+
             overflow: hidden;
 
+            height: fit-content;
+            width: fit-content;
             a {
                 text-decoration: none;
                 position: relative;
                 width: fit-content;
-                color:#1264a3;
-                span{
+                color: #1264a3;
+
+                span {
                     font-size: 2em;
                 }
+
                 &::after {
                     content: '';
                     width: 100%;
@@ -46,11 +55,11 @@ $linkColor: #1264a3;
                     bottom: 0;
                     left: -100%;
                     border-bottom: 1px solid $linkColor;
-                    transition: left 1s ease;
+                    transition: left 0.3s ease;
                 }
             }
 
-            &:hover > a::after {
+            &:hover>a::after {
                 left: 0;
             }
         }
