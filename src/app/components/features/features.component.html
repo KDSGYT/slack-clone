@@ -1,0 +1,16 @@
+<main id="features-container">
+    <section id="features">
+        <div id="customer-brands">
+            <h3>TRUSTED BY COMPANIES ALL OVER THE WORLD</h3>
+            <ol>
+                <li *ngFor="let brand of brands"><img [src]="'assets/images/'+ brand + '.png'" /></li>
+            </ol>
+        </div>
+    </section>
+    <div>
+
+        <app-feature *ngFor="let video of videos" [videoSide]="video.videoSide"
+            [videoLink]="'assets/homepage/video/' + video.videoLink" [sectionHeading]="video.sectionHeading"
+            [supportingText]="video.supportingText" [learnMore]="video.learnMore"></app-feature>
+    </div>
+</main>

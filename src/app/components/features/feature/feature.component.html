@@ -1,0 +1,16 @@
+<section [ngStyle]="{'flex-direction': videoSide==='right' ? 'row' : 'row-reverse'}" class="feature-container">
+    <div class="one-side">
+        <h1>{{ sectionHeading }}</h1>
+        <p>{{supportingText}}</p>
+        <div class="link-container">
+            <a href="/">{{learnMore.linkName}} 	<span>&#x2192;</span></a>
+
+        </div>
+    </div>
+    <div [ngStyle]="{'justify-content': videoSide==='right' ? 'flex-end': 'flex-start'}" class="other-side">
+        <video autoplay loop [muted]="true">
+            <source [src]='videoLink' />
+        </video>
+    </div>
+
+</section>

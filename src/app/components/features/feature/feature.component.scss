@@ -1,0 +1,70 @@
+@import '../../../../assets/variables.scss';
+$linkColor: #1264a3;
+.feature-container {
+    max-width: $maxWidth;
+    height: 22em;
+    overflow: hidden;
+    margin: 4em auto;
+    display: flex;
+    justify-content: space-between;
+
+    .one-side,
+    .other-side {
+
+        height: 100%;
+    }
+
+    .one-side {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 40%;
+
+        font-family: 'Slack-larsseit-regular';
+
+        h1 {
+            font-family: 'Slack-larsseit-bold';
+            font-size: 3.125rem;
+        }
+
+        .link-container {
+            overflow: hidden;
+
+            a {
+                text-decoration: none;
+                position: relative;
+                width: fit-content;
+                color:#1264a3;
+                span{
+                    font-size: 2em;
+                }
+                &::after {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: -100%;
+                    border-bottom: 1px solid $linkColor;
+                    transition: left 1s ease;
+                }
+            }
+
+            &:hover > a::after {
+                left: 0;
+            }
+        }
+    }
+
+    .other-side {
+        width: 60%;
+        height: 100%;
+        display: flex;
+
+        video {
+            // width: auto;
+            pointer-events: none;
+            height: inherit;
+        }
+    }
+}
