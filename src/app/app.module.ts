@@ -8,6 +8,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { FeatureComponent } from './components/features/feature/feature.component';
+import { ReliableComponent } from './components/reliable/reliable.component';
+import { TalkToSalesButtonComponent } from './components/talk-to-sales-button/talk-to-sales-button.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FeatureComponent } from './components/features/feature/feature.componen
     NavbarComponent,
     FeaturesComponent,
     FeatureComponent,
+    ReliableComponent,
+    TalkToSalesButtonComponent,
   ],
   imports: [
     BrowserModule,

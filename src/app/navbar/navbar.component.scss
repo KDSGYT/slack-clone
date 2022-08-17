@@ -53,7 +53,6 @@
                 }
             }
 
-            #talk-to-sales,
             #try-for-free {
                 height: 55%;
                 width: 30%;
@@ -78,9 +77,7 @@
 
             }
 
-            #talk-to-sales button {
-                
-            }
+            
 
             #try-for-free button {
                 background-color: white;
@@ -161,7 +158,8 @@
         }
 
         //NOTE: need to create an animation when the menu goes back to hidden state.
-
+        // You can also create an component for the hidden menu component to reduce the size the bundle size.
+    
     }
 
     #home-link {

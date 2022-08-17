@@ -1,0 +1,30 @@
+// change the following varaible to white or black according to the background color.
+$buttonTheme: white;
+.button-container {
+    height: 2.5rem;
+    width: 8rem;
+    list-style-type: none;
+    .talk-to-sales {
+        height: 100%;
+        width: 100%;
+        button {
+            border: 2px solid $buttonTheme;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Slack-larsseit-bold';
+            text-align: center;
+            
+            width: 100%;
+            height: 100%;
+            color: $buttonTheme;
+            // border: none;
+            background: none;
+            transition: border-width 0.1s linear;
+
+            &:hover {
+                border-width: 4px;
+            }
+        }
+
+    }
+}
