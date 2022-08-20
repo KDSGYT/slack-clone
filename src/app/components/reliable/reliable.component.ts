@@ -6,11 +6,28 @@ import { GLOBALpurple } from 'src/assets/variables';
   templateUrl: './reliable.component.html',
   styleUrls: ['./reliable.component.scss']
 })
+
 export class ReliableComponent implements OnInit {
   public buttonColor = GLOBALpurple;
+  public buttonHeight = ''
+  public numbersWithText = [
+    {
+      number: 85,
+      supportingText: 'of users say Slack has improved communication*'
+    },
+    {
+      number: 86,
+      supportingText: 'feel their ability to work remotely has improved*'
+    },
+    {
+      number: 89,
+      supportingText: 'feel more connected to their teams*'
+    }
+
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -1,13 +1,54 @@
-#reliable-container{
-    #hero{
+@import '../../../assets/variables.scss';
 
-        #buttons{
+#reliable-container {
+    width: 100%;
+    height: 15em;
+    font-family: 'Slack-larsseit-regular';
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: inherit;
+        width: $maxWidth;
+        margin: auto;
+        h1,
+        p,
+        #buttons {
+            font-family: 'Slack-larsseit-bold';
+            width: fit-content;
+            margin: auto;
+        }
+        h1{
             
+            font-size: 3em;
+        }
+        #meet-slack-enterprise {
+            background-color: $purpleGlobal;
+            color: white;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &:hover {
+                background-color: #4a154b;
+            }
         }
 
-    }
-    #misc-metrics{
 
+        #buttons {
+            width: 29%;
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #left-side,
+        #right-side {
+            display: none;
+        }
     }
+
+    #misc-metrics {}
 
 }

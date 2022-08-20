@@ -3,7 +3,7 @@
         <h1>Teams large and small rely on Slack</h1>
         <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
         <div id="buttons">
-            <button id="">MEET SLACK FOR ENTERPRISE</button>
+            <button id="meet-slack-enterprise">MEET SLACK FOR ENTERPRISE</button>
             <app-talk-to-sales-button [buttonColor]="buttonColor"></app-talk-to-sales-button>
         </div>
         <!-- Misc metrics -->
@@ -20,8 +20,9 @@
         </div>
     </div>
     <div id="metrics">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div *ngFor="let number of numbersWithText">
+            <div class="metric">{{number.number}}</div>
+            <div class="metric-info">{{number.supportingText}}</div>
+        </div>
     </div>
 </section>
