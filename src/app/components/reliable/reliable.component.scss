@@ -2,15 +2,21 @@
 
 #reliable-container {
     width: 100%;
-    height: 15em;
+    height: fit-content;
     font-family: 'Slack-larsseit-regular';
+    margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
+
     #hero {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: inherit;
+        height: 15em;
         width: $maxWidth;
         margin: auto;
+
+
         h1,
         p,
         #buttons {
@@ -18,37 +24,73 @@
             width: fit-content;
             margin: auto;
         }
-        h1{
-            
+
+        h1 {
+
             font-size: 3em;
         }
-        #meet-slack-enterprise {
-            background-color: $purpleGlobal;
-            color: white;
-            border-radius: 5px;
-            padding-left: 20px;
-            padding-right: 20px;
-
-            &:hover {
-                background-color: #4a154b;
-            }
-        }
-
 
         #buttons {
-            width: 29%;
-            height: 20%;
+            width: 39%;
+            height: 24%;
+            font-size: 1em;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            #meet-slack-enterprise {
+                font-size: inherit;
+                font-family: 'Slack-larsseit-bold';
+                background-color: $purpleGlobal;
+                color: white;
+                border-radius: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                width: 60%;
+
+                &:hover {
+                    background-color: #4a154b;
+                }
+            }
+
+            #sales-button {
+                width: 38%;
+
+                button {}
+            }
         }
 
-        #left-side,
-        #right-side {
-            display: none;
+    }
+
+    #misc-metrics-container {
+        position: absolute;
+        width: inherit;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .misc-metric {
+            height: 50%;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                height: inherit;
+            }
+        }
+
+        &> :nth-child(2) {
+            margin-left: -7%;
+        }
+
+        &> :nth-child(3) {
+            margin-right: -3%;
         }
     }
 
-    #misc-metrics {}
 
 }

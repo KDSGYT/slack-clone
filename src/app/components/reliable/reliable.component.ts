@@ -25,6 +25,10 @@ export class ReliableComponent implements OnInit {
     }
 
   ]
+  public stylesForSalesButton = {
+    // 'font-size':'20px
+    // border:'2px solid black'
+  }
 
   constructor() { }
 

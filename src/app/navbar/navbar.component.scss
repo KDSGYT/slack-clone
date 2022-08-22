@@ -40,17 +40,26 @@
         }
 
         #button-section {
+
             padding-left: 15%;
+            height: inherit;
 
             #search-button {
                 background-color: $purpleGlobal;
                 border: none;
                 height: 40%;
+
                 width: fit-content;
 
                 img {
                     height: 80%;
                 }
+            }
+
+            #talk-to-sales{
+                height: 60%;
+                width: 30%;
+                border:2px solid black;
             }
 
             #try-for-free {
@@ -70,21 +79,22 @@
                     // border: none;
                     background: none;
                     transition: border-width 0.1s linear;
-                    &:hover{
+
+                    &:hover {
                         border-width: 4px;
                     }
                 }
 
             }
 
-            
+
 
             #try-for-free button {
                 background-color: white;
                 border-color: $purpleGlobal;
                 color: $purpleGlobal;
 
-                
+
                 &:hover {
                     border-width: 5px;
                 }
@@ -159,7 +169,7 @@
 
         //NOTE: need to create an animation when the menu goes back to hidden state.
         // You can also create an component for the hidden menu component to reduce the size the bundle size.
-    
+
     }
 
     #home-link {
