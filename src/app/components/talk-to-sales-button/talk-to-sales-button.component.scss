@@ -6,11 +6,10 @@ button {
     height: 100%;
     width: 100%;
     font-size: inherit;
-    // border:2px solid black;
-    border: 2px solid $buttonTheme;
+    border: 1px solid $buttonTheme;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Slack-larsseit-bold';
+    font-family: inherit;
     text-align: center;
 
     color: $buttonTheme;
@@ -18,7 +17,7 @@ button {
     transition: border-width 0.1s linear;
 
     &:hover {
-        border-width: 4px;
+        border-width: 3px;
     }
 
 

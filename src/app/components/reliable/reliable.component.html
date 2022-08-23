@@ -4,34 +4,30 @@
         <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
         <div id="buttons">
             <button id="meet-slack-enterprise">MEET SLACK FOR ENTERPRISE</button>
-            <div 
-                id="sales-button" 
-                app-talk-to-sales-button 
-                [buttonColor]="buttonColor"
-            ></div>            
-            
+            <div id="sales-button" app-talk-to-sales-button [buttonColor]="buttonColor"></div>
+
         </div>
         <!-- Misc metrics -->
         <div id="misc-metrics-container">
             <div class="misc-metric">
-                <img src="assets/images/Reliable-section/emoji-office-building.png" alt="metric-image"/>
-                <img src="assets/images/Reliable-section/emoji-skyline.png" alt="metric-image"/>
+                <img src="assets/images/Reliable-section/emoji-office-building.png" alt="metric-image" />
+                <img src="assets/images/Reliable-section/emoji-skyline.png" alt="metric-image" />
             </div>
             <div class="misc-metric">
-                <img src="assets/images/Reliable-section/emoji-chart-upward-trend.png" alt="metric-image"/>
-                <img src="assets/images/Reliable-section/emoji-handshake.png" alt="metric-image"/>
+                <img src="assets/images/Reliable-section/emoji-chart-upward-trend.png" alt="metric-image" />
+                <img src="assets/images/Reliable-section/emoji-handshake.png" alt="metric-image" />
             </div>
             <div class="misc-metric">
-                <img src="assets/images/Reliable-section/emoji-lock.png" alt="metric-image"/>
-                <img src="assets/images/Reliable-section/emoji-woman-technologist.png" alt="metric-image"/>
+                <img src="assets/images/Reliable-section/emoji-lock.png" alt="metric-image" />
+                <img src="assets/images/Reliable-section/emoji-woman-technologist.png" alt="metric-image" />
             </div>
 
         </div>
     </div>
-    <!-- <div id="metrics">
-        <div *ngFor="let number of numbersWithText">
-            <div class="metric">{{number.number}}</div>
-            <div class="metric-info">{{number.supportingText}}</div>
+    <div id="metrics">
+        <div class="metric-container" *ngFor="let number of numbersWithText">
+                <h1 class="metric">{{number.number}}%</h1>
+                <div class="metric-info">{{number.supportingText}}</div>
         </div>
-    </div> -->
+    </div>
 </section>

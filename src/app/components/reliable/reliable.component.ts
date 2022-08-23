@@ -20,7 +20,7 @@ export class ReliableComponent implements OnInit {
       supportingText: 'feel their ability to work remotely has improved*'
     },
     {
-      number: 89,
+      number: 88,
       supportingText: 'feel more connected to their teams*'
     }
 
