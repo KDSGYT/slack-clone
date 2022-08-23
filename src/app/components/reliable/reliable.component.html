@@ -7,6 +7,7 @@
             <div id="sales-button" app-talk-to-sales-button [buttonColor]="buttonColor"></div>
 
         </div>
+
         <!-- Misc metrics -->
         <div id="misc-metrics-container">
             <div class="misc-metric">
@@ -24,10 +25,44 @@
 
         </div>
     </div>
+
+    <!-- metrics -->
     <div id="metrics">
         <div class="metric-container" *ngFor="let number of numbersWithText">
-                <h1 class="metric">{{number.number}}%</h1>
-                <div class="metric-info">{{number.supportingText}}</div>
+            <h1 class="metric">{{number.number}}%</h1>
+            <div class="metric-info">{{number.supportingText}}</div>
         </div>
     </div>
+
+    <!-- features video embeded from youtube -->
+    <div id="featured-video">
+        <aside id="left-section">
+            <a href="https://www.youtube.com/embed/IDrUzXubiiQ">
+                <video [ngStyle]="{'border-radius': ' 0 14em 14em 0'}" #normalVideo autoplay loop [muted]="true">
+                    <source src='assets/homepage/video/tmobile.mp4' />
+                </video>
+                <svg width="84" height="60" class="c-youtube-video--showcase__icon" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" transform="translate(0 .564)">
+                        <rect height="59" rx="4" width="84"></rect>
+                        <path d="M49 29.95L35 36.9V23L49 29.95Z" fill="#fff"></path>
+                    </g>
+                </svg>
+            </a>
+        </aside>
+        <div id="right-section">
+            <p id="quote">“We were able to create a large virtual network of employees that can communicate as though
+                they are together. There was a lot of disruption in terms of where we worked, but in terms of how we
+                worked—very little disruption.”</p>
+            <div>
+                <h4>Mark Smith</h4>
+                <p>Senior Technical Product Manager, T-Mobile</p>
+                <div class="link-container">
+                    <a href="/">See more customer stories <span>&#x2192;</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </section>

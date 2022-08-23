@@ -3,12 +3,13 @@
         <h1>{{ sectionHeading }}</h1>
         <p>{{supportingText}}</p>
         <div class="link-container">
-            <a href="/">{{learnMore.linkName}} 	<span>&#x2192;</span></a>
+            <a href="/">{{learnMore.linkName}} <span>&#x2192;</span></a>
 
         </div>
     </div>
     <div [ngStyle]="{'justify-content': videoSide==='right' ? 'flex-end': 'flex-start'}" class="other-side">
-        <video autoplay loop [muted]="true">
+
+        <video [ngStyle]="videoStyle"  #normalVideo autoplay loop [muted]="true">
             <source [src]='videoLink' />
         </video>
     </div>

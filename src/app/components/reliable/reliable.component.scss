@@ -130,5 +130,81 @@
         }
     }
 
+    #featured-video {
+        max-width: calc($maxWidth + 10em);
+        margin: auto;
+        padding-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
 
+        #left-section {
+            width: 70%;
+            position: relative;
+
+            video {
+                height: 25em;
+            }
+
+            svg {
+                position: absolute;
+                transform-origin: 50% 50%;
+                top: 40%;
+                left: 49%;
+                background-color: #36c5f0;
+            }
+            video:hover + svg{
+                background-color: #1264a3;
+            }
+        }
+
+        #right-section {
+            width: auto;
+            padding: 0em 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            p#quote {
+                font-style: italic;
+                font-weight: 100;
+                font-size: 1.70em;
+                font-family: 'Slack-larsseit-regular';
+
+            }
+        }
+    }
+
+    .link-container {
+
+        overflow: hidden;
+
+        height: fit-content;
+        width: fit-content;
+
+        a {
+            text-decoration: none;
+            position: relative;
+            width: fit-content;
+            color: #1264a3;
+
+            span {
+                font-size: 2em;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: -100%;
+                border-bottom: 1px solid $linkColor;
+                transition: left 0.3s ease;
+            }
+        }
+
+        &:hover>a::after {
+            left: 0;
+        }
+    }
 }
