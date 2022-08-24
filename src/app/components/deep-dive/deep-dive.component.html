@@ -1,0 +1,18 @@
+<section>
+    <h1>Take a deeper dive into a new way to work</h1>
+    <div id="cards-container">
+        <div class="card" id="main-card">
+            <div id="upper-section">
+                <p>Collection</p>
+                <h2>Slack as your digital HQ</h2>
+            </div>
+            <div id="lower-section">
+                <img src="assets/images/deep-dive/img-promo-01.png" />
+                <a>SEE ALL <img height="30px" width="30px" src="assets/images/deep-dive/white-arrow.svg" /></a>
+            </div>
+        </div>
+        <app-card *ngFor="let card of cardInfo" [imageText]="card.imageText" [imageLink]="card.imageLink"
+            [heading]="card.heading" [linkName]="card.linkName"></app-card>
+    </div>
+    <div id="welcome-hq"></div>
+</section>

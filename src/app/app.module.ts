@@ -10,6 +10,8 @@ import { FeaturesComponent } from './components/features/features.component';
 import { FeatureComponent } from './components/features/feature/feature.component';
 import { ReliableComponent } from './components/reliable/reliable.component';
 import { TalkToSalesButtonComponent } from './components/talk-to-sales-button/talk-to-sales-button.component';
+import { DeepDiveComponent } from './components/deep-dive/deep-dive.component';
+import { CardComponent } from './components/deep-dive/card/card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { TalkToSalesButtonComponent } from './components/talk-to-sales-button/ta
     FeatureComponent,
     ReliableComponent,
     TalkToSalesButtonComponent,
+    DeepDiveComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
