@@ -137,7 +137,16 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        position: relative;
+        padding-bottom: 4em;
 
+        p#footnote{
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width: 100%;
+            text-align: center;
+        }
         #left-section {
             width: 70%;
             position: relative;
