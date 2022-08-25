@@ -9,7 +9,6 @@ section {
     It worked only when the container had border of 
     ateast 1px;*/
 
-    border: 1px solid $globalBackgroundColor;
 
     h1 {
         width: fit-content;
@@ -85,7 +84,7 @@ section {
     position: relative;
     display: flex;
     justify-content: space-around;
-
+    background-color: white;
     #welcome-hq {
         width: 100%;
         max-width: $maxWidth;

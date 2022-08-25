@@ -13,6 +13,7 @@ import { TalkToSalesButtonComponent } from './components/talk-to-sales-button/ta
 import { DeepDiveComponent } from './components/deep-dive/deep-dive.component';
 import { CardComponent } from './components/deep-dive/card/card.component';
 import { TryForFreeButtonComponent } from './components/try-for-free-button/try-for-free-button.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TryForFreeButtonComponent } from './components/try-for-free-button/try-
     DeepDiveComponent,
     CardComponent,
     TryForFreeButtonComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,103 @@
+@import '../../assets/variables.scss';
+
+footer {
+    margin: 5em;
+
+    #footer-container {
+        margin: auto;
+        max-width: $maxWidth;
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            #icon-container {
+                height: fit-content;
+
+                img {
+                    height: 2em;
+                }
+            }
+
+            ul.lists {
+                list-style-type: none;
+                width: fit-content;
+
+                .list-heading {
+                    font-family: $BoldFonts;
+                    cursor: default;
+                }
+
+                .list-item {
+                    margin: 0;
+                    width: fit-content;
+                    margin: 20% 0;
+                    font-size: 0.87em;
+                    font-family: $RegularFonts;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $linkColor;
+                    }
+                }
+            }
+        }
+
+        #misc-menu {
+            width: 100%;
+            border-top: 2px solid rgba(133, 133, 133, 0.299);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            ul {
+                margin-top: 2%;
+                width: 50%;
+                list-style-type: none;
+                display: flex;
+                
+                font-family: $BoldFonts;
+                
+                li {
+                    min-width: fit-content;
+                    color: black;
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        color: $linkColor;
+                    }
+                    svg{
+                        margin: auto;
+                        margin-right: 5px;
+                    }
+                    
+                }
+            }
+
+            #links{
+                li{
+                    margin-right: 2%;
+                }
+            }
+
+            #social {
+                display: flex;
+                justify-content: flex-end;
+                li{
+                    margin-left: 2%;
+
+                }
+                #download{
+                    color: $linkColor;
+                }
+                
+            }
+        }
+    }
+
+    p#text {
+        font-size: 0.9em;
+        margin-top: 2%;
+    }
+}
