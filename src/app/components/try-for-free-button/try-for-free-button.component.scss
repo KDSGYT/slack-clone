@@ -1,0 +1,26 @@
+// change the following varaible to white or black according to the background color.
+// $buttonTheme: ;
+@import '../../../assets/variables.scss';
+button {
+    // background-color: white;
+    
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-size: inherit;
+    border: none;
+    border: 1px solid $purpleGlobal;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    color: $purpleGlobal;
+    transition: border-width 0.1s linear;
+
+    &:hover {
+        border-width: 5px;
+    }
+
+
+}

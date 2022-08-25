@@ -14,5 +14,14 @@
         <app-card *ngFor="let card of cardInfo" [imageText]="card.imageText" [imageLink]="card.imageLink"
             [heading]="card.heading" [linkName]="card.linkName"></app-card>
     </div>
-    <div id="welcome-hq"></div>
+</section>
+<section id="welcome-hq-container">
+    <div id="welcome-hq">
+        <h1>Welcome to your new digital HQ</h1>
+        <ul id="button-container">
+            <li id="try-for-free" app-try-for-free-button></li>
+            <li id="talk-to-sales"  buttonColor="white" app-talk-to-sales-button>
+            </li>
+        </ul>
+    </div>
 </section>

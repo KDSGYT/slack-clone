@@ -12,6 +12,7 @@ import { ReliableComponent } from './components/reliable/reliable.component';
 import { TalkToSalesButtonComponent } from './components/talk-to-sales-button/talk-to-sales-button.component';
 import { DeepDiveComponent } from './components/deep-dive/deep-dive.component';
 import { CardComponent } from './components/deep-dive/card/card.component';
+import { TryForFreeButtonComponent } from './components/try-for-free-button/try-for-free-button.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CardComponent } from './components/deep-dive/card/card.component';
     TalkToSalesButtonComponent,
     DeepDiveComponent,
     CardComponent,
+    TryForFreeButtonComponent,
   ],
   imports: [
     BrowserModule,

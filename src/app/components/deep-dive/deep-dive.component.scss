@@ -18,6 +18,7 @@ section {
         font-family: $BoldFonts;
     }
 
+
     #cards-container {
         margin: auto;
         max-width: $maxWidth;
@@ -54,6 +55,7 @@ section {
                 flex-direction: column;
                 justify-content: space-between;
                 position: relative;
+
                 a {
                     position: absolute;
                     bottom: 0%;
@@ -66,6 +68,51 @@ section {
 
             &:hover {
                 transform: scale(1.1);
+            }
+        }
+    }
+
+
+}
+
+#welcome-hq-container {
+    height: 29em;
+    width: 100%;
+    background-image: url('../../../assets/svgs/curve2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    #welcome-hq {
+        width: 100%;
+        max-width: $maxWidth;
+        font-family: $BoldFonts;
+        color: white;
+        margin: auto;
+        font-size: 1.6em;
+
+        h1 {
+            margin: 0 auto;
+            margin-bottom: 2%;
+        }
+
+        #button-container {
+            height: fit-content;
+            width: fit-content;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            justify-content: space-evenly;
+
+            li {
+                margin: 5px;
+                font-size: 0.6em;
+                width: 11em;
+                height: 3.8em;
             }
         }
     }
