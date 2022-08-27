@@ -1,7 +1,10 @@
-#mainstyles{
+@import '../assets/variables.scss';
+#mainstyles {
+
     // position: relative;
-    #floating-nav{
-        border:2px solid black;
-        background-color: white;
+    #navbar-container {
+        // border: 2px solid black;
+        background-color: $purpleGlobal;
+        min-height: 5.04em;
     }
 }

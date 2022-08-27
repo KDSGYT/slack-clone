@@ -30,6 +30,7 @@ export class NavbarComponent implements OnInit {
       this.visible = true;
     } else if (window.pageYOffset < this.thresholdOffsetValue) {
       this.visible = false;
+      
     }
   }
 
