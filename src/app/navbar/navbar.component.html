@@ -1,5 +1,5 @@
-<div [ngClass]="sticky ? 'floating':'' " id="nav-container">
-    <nav>
+<div [ngClass]="sticky ? 'floating':'' "  id="nav-container">
+    <nav [style.top]=" visible ? '1%': '-40%'" >
         <div id="links-section">
             <li id="home-link"><img src="assets/icon/favicon-32-ua.png" />slack</li>
             <li id="product">
@@ -21,10 +21,18 @@
             <li>Pricing</li>
         </div>
         <div id="button-section">
-            <li><button id="search-button"><img src="assets/icon/search_icon_light.svg" /></button></li>
+            <li><button [style.backgroundColor]="sticky ? 'white' : ''" id="search-button">
+                <img *ngIf="!sticky" src="/assets/icon/search_icon_light.svg" />
+                <img *ngIf="sticky" [style.backgroundColor]="'white'" src="/assets/icon/search_icon_dark.svg" />
+            </button></li>
             <li>Sign In</li>
-            <li app-talk-to-sales-button id="talk-to-sales"></li>
-            <li app-try-for-free-button id="try-for-free"></li>
+            <li app-talk-to-sales-button [buttonColor]="sticky ? talkToSalesButtonColor:'white'" id="talk-to-sales"></li>
+            <li 
+                app-try-for-free-button 
+                [backgroundColor]="sticky ? talkToSalesButtonColor:''" 
+                id="try-for-free"
+                [buttonColor]="sticky ? 'white': talkToSalesButtonColor"
+                ></li>
             <!-- <li id="try-for-free"><button>TRY FOR FREE</button></li> -->
         </div>
     </nav>
