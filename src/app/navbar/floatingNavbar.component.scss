@@ -1,0 +1,17 @@
+@import '../../assets/variables.scss';
+.floating#nav-container {
+    width: $maxWidth;
+    margin: auto;
+    nav {
+        overflow: hidden;
+        position: fixed;
+        z-index: 9;
+        background-color: white;
+        top: 1%;
+        border-radius: 4em;
+        li {
+            color: black;
+
+        }
+    }
+}
