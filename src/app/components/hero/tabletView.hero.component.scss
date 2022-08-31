@@ -1,0 +1,25 @@
+@import '../../../assets/variables.scss';
+
+@media only screen and (max-width: $tabletView) {
+    .hero-container {
+        background-color: grey;
+        overflow: hidden;
+
+        border: 5px solid black;
+
+        .hero #left-side #buttons {
+            flex-direction: column;
+            // min-width: ;
+            $containerHeight: 9em;
+            min-width: 50%;
+            height: $containerHeight;
+
+            #sign-up-with-google,
+            #sign-up-with-email {
+                width: 100%;
+                height: $containerHeight/2.3;
+            }
+        }
+    }
+}
+// NOTE: working on the video side to make it hidden for the overflown area.

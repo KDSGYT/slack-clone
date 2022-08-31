@@ -1,5 +1,12 @@
 @import '../../../assets/variables.scss';
 
+@media only screen and (max-width: $tabletView) {
+    #realiable-container {
+        overflow: hidden;
+
+    }
+}
+
 #reliable-container {
     width: 100%;
     height: fit-content;
@@ -12,7 +19,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 15em;
+        height: 20em;
         width: $maxWidth;
         margin: auto;
 
@@ -139,16 +146,17 @@
         position: relative;
         padding-bottom: 4em;
 
-        p#footnote{
+        p#footnote {
             position: absolute;
             font-size: 0.8em;
             font-family: 'Slack-larsseit-regular';
 
             bottom: 0;
-            left:0;
+            left: 0;
             width: 100%;
             text-align: center;
         }
+
         #left-section {
             width: 70%;
             position: relative;
@@ -164,7 +172,8 @@
                 left: 49%;
                 background-color: #36c5f0;
             }
-            video:hover + svg{
+
+            video:hover+svg {
                 background-color: #1264a3;
             }
         }

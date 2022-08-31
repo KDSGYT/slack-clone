@@ -5,3 +5,15 @@ $globalBackgroundColor:#f4ede4;
 $BoldFonts:'Slack-larsseit-bold';
 $RegularFonts:'Slack-larsseit-regular';
 $linkColor: #1264a3;
+
+
+/*************************************************************/
+/**************************Breakpoints************************/
+// 
+$tabletView: 1180px;
+
+@media  only screen and (max-width: $tabletView) {
+    $maxWidth: $tabletView;
+}
+@media screen {
+}
