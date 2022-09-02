@@ -2,24 +2,78 @@
 
 @media only screen and (max-width: $tabletView) {
     .hero-container {
-        background-color: grey;
         overflow: hidden;
 
-        border: 5px solid black;
-
-        .hero #left-side #buttons {
-            flex-direction: column;
-            // min-width: ;
-            $containerHeight: 9em;
-            min-width: 50%;
-            height: $containerHeight;
-
-            #sign-up-with-google,
-            #sign-up-with-email {
-                width: 100%;
-                height: $containerHeight/2.3;
+        .hero #left-side {
+            text-align: center;
+            #text h1 span{
+                color: inherit;
             }
+            #tablet-view-p {
+                display: initial;
+                span {
+                    color: $accentOrange;
+
+                }
+            }
+
+            #laptop-view-p {
+                display: none;
+            }
+
+            #buttons {
+                margin-left: auto;
+                margin-right: auto;
+                flex-direction: column;
+                $containerHeight: 9em;
+                min-width: 50%;
+                height: $containerHeight;
+
+                #sign-up-with-google,
+                #sign-up-with-email {
+                    width: 100%;
+                    height: $containerHeight/2.3;
+                }
+            }
+        }
+
+        .hero #left-side #text p {
+            display: none;
         }
     }
 }
-// NOTE: working on the video side to make it hidden for the overflown area.
+
+@media only screen and (max-width: 900px) {
+    .hero-container {
+
+        .hero {
+            height: 60vh;
+            // margin-top: 1em;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            #text h1 {
+                text-align: center;
+            }
+
+            #video {
+                // display: none;
+                // min-width: 100%;
+                height: 30%;
+                width: 110%;
+                margin: 0;
+
+                video {
+                    width: inherit;
+                    height: auto;
+                }
+            }
+
+            #left-side {
+                height: 70%;
+                width: 100%;
+            }
+        }
+
+    }
+}

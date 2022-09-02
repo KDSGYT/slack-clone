@@ -1,52 +1,39 @@
 @import '../../../assets/variables.scss';
 
-@media only screen and (max-width: $maxWidth) {
-    .hero-container{
-        overflow: hidden;
-        .hero #video{
-            
-            max-width: 50%;
-            border:2px solid black;
-        }
-    }
-}
-
 .hero-container {
     background-color: $purpleGlobal;
-
+    
     .hero {
+        overflow: hidden;
         margin: auto;
         color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        // padding-top: rem;
         padding-bottom: auto;
         height: 33rem;
         max-width: $maxWidth;
         font-family: 'Slack-larsseit-regular';
 
         #left-side {
-
-            // width: 60em;
+            height: inherit;
             padding: 0 3%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            // min-width: $maxWidth/2;
+            min-width: 50%;
             &>p {
                 margin-top: -10%;
             }
 
             #text {
                 margin-top: -10%;
-
                 h1 {
                     font-size: 3.5rem;
                     font-family: 'Slack-larsseit-bold';
 
                     span {
-                        color: #ecb22e;
+                        color: $accentOrange;
                     }
                 }
 
@@ -59,8 +46,8 @@
             #buttons {
                 margin-top: -5%;
                 max-width: $maxWidth / 2;
-                width: 79%;
-                // min-height: 4em;
+                width: 100%;
+                // min-width: ;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -72,8 +59,8 @@
                     overflow: hidden;
                     border-radius: 4px;
                     width: 49%;
-                    min-width: $maxWidth/6;
-                    // min-width: 6em;
+                    border:2px solid black;
+                    min-width: $maxWidth/5;
                     height: 4em;
                     // text-align: center;
                     display: flex;
@@ -122,6 +109,9 @@
             p {
                 font-size: 1.2em;
 
+            }
+            #tablet-view-p{
+                display: none;
             }
         }
 
