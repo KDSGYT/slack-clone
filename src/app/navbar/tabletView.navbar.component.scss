@@ -1,0 +1,48 @@
+@import'./../../assets/variables.scss';
+
+@media only screen and (max-width: 900px) {
+    #nav-container {
+
+        // justify-content: space-between;
+        // the following statement will apply the styles to 
+        //all the elemnts but the home-link element
+        nav {
+            padding-left: 10%;
+            padding-right: 5%;
+            justify-content: space-between;
+
+            #links-section {
+                width: fit-content;
+            }
+
+
+            #menu-button-container {
+                display: initial;
+                // width: 40%;
+                width: fit-content;
+                height: fit-content;
+
+                button {
+                    margin: auto;
+                }
+            }
+
+            #links-section> :not(#home-link),
+            #button-section> :not(#search-button) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tabletView) {
+    #nav-container {
+        nav {
+            #button-section {
+                #talk-to-sales {
+                    display: none;
+                }
+            }
+        }
+    }
+}

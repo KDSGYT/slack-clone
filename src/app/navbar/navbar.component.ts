@@ -4,7 +4,10 @@ import { GLOBALpurple } from 'src/assets/variables';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss', './floatingNavbar.component.scss']
+  styleUrls: [
+    './navbar.component.scss',
+    './floatingNavbar.component.scss',
+    './tabletView.navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
 

@@ -14,6 +14,7 @@ import { DeepDiveComponent } from './components/deep-dive/deep-dive.component';
 import { CardComponent } from './components/deep-dive/card/card.component';
 import { TryForFreeButtonComponent } from './components/try-for-free-button/try-for-free-button.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavMenuButtonComponent } from './navbar/nav-menu-button/nav-menu-button.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     CardComponent,
     TryForFreeButtonComponent,
     FooterComponent,
+    NavMenuButtonComponent,
   ],
   imports: [
     BrowserModule,

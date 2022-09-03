@@ -24,7 +24,8 @@
         }
 
         #button-section,
-        #links-section {
+        #links-section,
+        #menu-button-container{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -37,6 +38,10 @@
                 display: flex;
                 align-items: center;
             }
+        }
+
+        #menu-button-container{
+            display: none;
         }
 
         #button-section {
